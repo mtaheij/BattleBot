@@ -7,7 +7,7 @@ from cloudbot.util import formatting
     
 
 @asyncio.coroutine
-@hook.command("help", autohelp=False)
+@hook.command("chelp", autohelp=False)
 def help_command(text, chan, conn, bot, notice, message, has_permission):
     """[command] - gives help for [command], or lists all available commands if no command is specified
     :type text: str

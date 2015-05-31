@@ -18,8 +18,8 @@ random_url = api_prefix + "?action=query&format=xml&list=random&rnlimit=1&rnname
 paren_re = re.compile('\s*\(.*\)$')
 
 
-@hook.command("wiki", "wikipedia", "w")
-def wiki(text):
+@hook.command("wikipedia")
+def wikipedia(text):
     """wiki <phrase> -- Gets first sentence of Wikipedia article on <phrase>."""
 
     try:

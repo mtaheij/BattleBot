@@ -51,7 +51,7 @@ def cb_think(text):
     SESSION['sessionid'] = data[1]
     return html.unescape(str(data[0]))
 
-@hook.command("ask", "cleverbot", "cb")
-def ask(text):
+@hook.command("cask", "cleverbot", "cb")
+def cask(text):
     """ <question> -- Asks Cleverbot <question> """
     return cb_think(text)
