@@ -7,8 +7,7 @@ bp_key = bot.config.get("api_keys", {}).get("battleplugins_key", {})
 #BattlePlugins shortner endpoint
 bp_shorten = https://api.battleplugins.com/v1/shorturls
 
-@hook.command()
-def shorten(text):
+@hook.command("shorten")
     url = args[0]
 
     payload = {'_key': bp_key, 'url': url}
@@ -16,4 +15,4 @@ def shorten(text):
 
     message = r.text()
 
-    return "https://bplug.in/" + message
+    return "https://bplug.in/"
