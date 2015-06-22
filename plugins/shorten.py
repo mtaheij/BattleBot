@@ -8,11 +8,11 @@ bp_key = bot.config.get("api_keys", {}).get("battleplugins_key", {})
 bp_shorten = https://api.battleplugins.com/v1/shorturls
 
 @hook.command("shorten")
-    url = args[0]
+    #url = args[0]
 
-    payload = {'_key': bp_key, 'url': url}
-    r = requests.post(bp_shorten, params=payload)
+    #payload = {'_key': bp_key, 'url': url}
+    #r = requests.post(bp_shorten, params=payload)
 
-    message = r.text()
+    #message = r.text()
 
-    return "https://bplug.in/"
+    return "https://bplug.in/" 
