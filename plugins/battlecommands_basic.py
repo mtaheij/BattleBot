@@ -1,5 +1,8 @@
 from cloudbot import hook
 
+@hook.command()
+def lDucks(text):
+    return "lDucks, I lost my virginity, can I have yours?"
 
 @hook.command()
 def help(text):
