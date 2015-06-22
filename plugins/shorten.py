@@ -8,7 +8,7 @@ bp_key = bot.config.get("api_keys", {}).get("battleplugins_key", {})
 bp_shorten = https://api.battleplugins.com/v1/shorturls
 
 @hook.command("shorten")
-   def shorten(text):
+def shorten(text):
     #url = args[0]
 
     #payload = {'_key': bp_key, 'url': url}
