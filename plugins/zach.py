@@ -2,18 +2,19 @@ import requests
 import json
 from cloudbot import hook
 
-#BattlePluginsAPI key
-bp_key = bot.config.get("api_keys", {}).get("battleplugins_key", {})
-#BattlePlugins shortner endpoint
-bp_shorten = "https://api.battleplugins.com/v1/shorturls"
-
 @hook.command()
 def shorten(text, bot):
-    #url = args[0]
+    #BattlePlugins shortner endpoint
+    bp_shorten = "https://api.battleplugins.com/v1/shorturls"
+    #BattlePluginsAPI key
+    bp_key = bot.config.get("api_keys", {}).get("battleplugins_key", {})
 
-    #payload = {'_key': bp_key, 'url': url}
-    #r = requests.post(bp_shorten, params=payload)
+    payload = {'_key': bp_key, 'url': text}
+    r = requests.post(bp_shorten, params=payload)
 
-    #message = r.text()
+    response = r.json()
 
-    return "https://bplug.in/"
+    if 'message' in response:
+        return "https://bplug.in/" + response['message']
+    else:
+        return "An error has occured :("
