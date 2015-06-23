@@ -14,4 +14,4 @@ def shorten(text, bot):
 
     response = r.json()
 
-        return "https://bplug.in/" + response
+    return "https://bplug.in" + response
