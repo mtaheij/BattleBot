@@ -10,12 +10,12 @@ def bplug(text, bot):
     bp_key = bot.config.get("api_keys", {}).get("battleplugins_key", {})
 
     payload = {'_key': bp_key, 'url': text}
-    r = requests.post(bp_shorten, params=payload)
+    r = requests.post(bp_shorten, data=payload)
 
     response = r.json()
     print(r)
 
     if response.get("success"):
-        return response["success"]["message"]
+        return "https://bplug.in/" + response["success"]["message"]
     else:
         return "Failed to shorten URL: " + response["error"]["message"]
