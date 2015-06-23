@@ -14,4 +14,7 @@ def shorten(text, bot):
 
     response = r.json()
 
-    return "https://bplug.in" + response
+    if response.get("success"):
+        return response["success"]["message"]
+    else:
+        return "Failed to shorten URL: " + response["error"]["message"
