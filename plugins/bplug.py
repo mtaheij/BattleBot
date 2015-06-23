@@ -13,7 +13,7 @@ def bplug(text, bot):
     r = requests.post(bp_shorten, params=payload)
 
     response = r.json()
-    print(response)
+    print(r)
 
     if response.get("success"):
         return response["success"]["message"]
