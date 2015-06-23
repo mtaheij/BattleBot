@@ -18,4 +18,4 @@ def bplug(text, bot):
     if response.get("success"):
         return response["success"]["message"]
     else:
-        return "Failed to shorten URL: " + response["error"]["message"
+        return "Failed to shorten URL: " + response["error"]["message"]
