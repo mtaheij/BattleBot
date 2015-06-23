@@ -10,6 +10,7 @@ def bplug(text, bot):
     bp_key = bot.config.get("api_keys", {}).get("battleplugins_key", {})
 
     payload = {'_key': bp_key, 'url': text}
+    headers = {'X-API-Key': bp_key}
     r = requests.post(bp_shorten, data=payload)
 
     response = r.json()
