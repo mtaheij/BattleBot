@@ -15,6 +15,6 @@ def shorten(text, bot):
     response = r.json()
 
     if 'message' in response:
-        return "https://bplug.in/" + response['message']
+        return "https://bplug.in/" + response
     else:
         return "An error has occured :("
