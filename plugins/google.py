@@ -20,6 +20,9 @@ from cloudbot.util import formatting, filesize
 
 API_CS = 'https://www.googleapis.com/customsearch/v1'
 
+@hook.command()
+def lDucks(text):
+    return "lDucks, I lost my virginity, can I have yours?"
 
 @hook.on_start()
 def load_api(bot):
