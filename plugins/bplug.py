@@ -3,7 +3,7 @@ import json
 from cloudbot import hook
 
 @hook.command()
-def bplug(text, bot):
+def shorten(text, bot):
     #BattlePlugins shortner endpoint
     bp_shorten = "https://api.battleplugins.com/v1/shorturls"
     #BattlePluginsAPI key
