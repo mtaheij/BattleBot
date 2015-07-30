@@ -7,6 +7,10 @@ def lDucks(text):
 @hook.command()
 def clovis(text):
     return "I hear Cl loves the French!"
+    
+@hook.command()
+def zach(text):
+    return "Zach443 has had dick before, he says it's pretty good, but it can change depending on how it's prepared"
 
 @hook.command()
 def help(text):
