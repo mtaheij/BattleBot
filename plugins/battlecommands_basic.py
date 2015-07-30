@@ -5,6 +5,10 @@ def lDucks(text):
     return "lDucks, I lost my virginity, can I have yours?"
 
 @hook.command()
+def clovis(text):
+    return "I hear Cl loves the French!"
+
+@hook.command()
 def help(text):
     if not text:
         return " Please help us help you! Paste your log and clearly describe your problem. Thank you!"
