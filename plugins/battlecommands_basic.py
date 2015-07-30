@@ -65,7 +65,7 @@ def ticket(text):
     elif text in ['BattleTracker', 'BT', 'battletracker','bt', 'statistics']:
         return "(BattleTracker) Please create a ticket here: https://goo.gl/Ye8KnR and make sure to follow these guidelines: https://goo.gl/a84Qr8. Thank you for helping us make BattleTracker better!"
     elif not text:
-        return "Please create a ticket on our GitHub at https://github.com/BattlePluginsDev."
+        return "Please create a ticket on our GitHub at https://github.com/BattlePlugins."
     else:
         return "(" + text + ") Please create a ticket here: https://goo.gl/o5UIKe and make sure to follow these guidelines: https://goo.gl/a84Qr8. Thank you!"
 
